@@ -1,5 +1,6 @@
 import cv2
 import pytesseract
+import matplotlib
 
 """Created by: Ing. Antonio Gómez Ruiz
 01/16/2024 """
@@ -25,7 +26,8 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 
 # Functions developed for this program
-def identify_number(img):
+# This function should be use when trying to delete the red area of an image
+def identify_number_red(img, x):
     """This will allow us to transform the choosen image to one in a gray scale"""
     imagen_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     cv2.imshow('imagen gris', imagen_gris)
@@ -35,15 +37,39 @@ def identify_number(img):
     The function threshold returns a tuple, and the funtion 'cv2.imshow' only shows 'arrays', therefore this is 
     solved by adding the '[1]' at the end of the method 'threshold'. In case further doubts show up, print the variable 
     type"""
-    imagen_procesada = cv2.threshold(imagen_gris, 80, 255, cv2.THRESH_BINARY)[1]
+    imagen_procesada = cv2.threshold(imagen_gris, 160, 255, cv2.THRESH_BINARY)[1]
     cv2.imshow('imagen procesada', imagen_procesada)
     cv2.waitKey(0)
 
     """With this section we use pytesseract to analyze the processed image and detect a number. We need to check 
-    further in the 'config' section to get a better result accuracy"""
+    further in the 'config' section to get a better result accuracy depending on individual cases"""
     option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
     option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
-    texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config='--psm 8')
+    texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
+    print(texto)
+
+
+# This function should be use when trying to delete the blue area of an image
+def identify_number_blue(img, x):
+    """This will allow us to transform the choosen image to one in a gray scale"""
+    imagen_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    cv2.imshow('imagen gris', imagen_gris)
+    cv2.waitKey(0)
+
+    """Thresholding == 'umbral' o 'umbralización'
+    The function threshold returns a tuple, and the funtion 'cv2.imshow' only shows 'arrays', therefore this is 
+    solved by adding the '[1]' at the end of the method 'threshold'. In case further doubts show up, print the variable 
+    type"""
+    """This values will retrieve only the 'red' area and delete the blue one"""
+    imagen_procesada = cv2.threshold(imagen_gris, 100, 255, cv2.THRESH_BINARY)[1]
+    cv2.imshow('imagen procesada', imagen_procesada)
+    cv2.waitKey(0)
+
+    """With this section we use pytesseract to analyze the processed image and detect a number. We need to check 
+    further in the 'config' section to get a better result accuracy depending on individual cases"""
+    option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
+    option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
+    texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
     print(texto)
 
 
@@ -56,15 +82,16 @@ cv2.waitKey(0)
 
 # Code used to ROI an image (select a Region Of Interest, or chop it)
 """As a reference 'imagen[height start: height end, width start, width end]"""
-imagen_cortada9 = imagen[60: 370, 50: 290]
-cv2.imshow('Imagen recortada', imagen_cortada9)
+imagen_cortada1 = imagen[60: 370, 50: 290]
+imagen_cortada2 = imagen[330: 640, 220: 460]
+"""Important note; it is not possible to have the same window name on 2 windows"""
+cv2.imshow('imagen cortada', imagen_cortada1)
+cv2.imshow('imagen cortada2', imagen_cortada2)
+cv2.waitKey(0)
 
-identify_number(imagen_cortada9)
+"""The developed function allows us to transform the image into a number"""
+identify_number_red(imagen_cortada1, '--psm 8')
+identify_number_blue(imagen_cortada2, '--psm 10')
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-
-
-
