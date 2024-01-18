@@ -35,16 +35,16 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 def identify_number_red(img, x):
     """This will allow us to transform the choosen image to one in a gray scale"""
     imagen_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imshow('imagen gris', imagen_gris)
-    cv2.waitKey(0)
+    # cv2.imshow('imagen gris', imagen_gris)
+    # cv2.waitKey(0)
 
     """Thresholding == 'umbral' o 'umbralización'
     The function threshold returns a tuple, and the funtion 'cv2.imshow' only shows 'arrays', therefore this is 
     solved by adding the '[1]' at the end of the method 'threshold'. In case further doubts show up, print the variable 
     type"""
     imagen_procesada = cv2.threshold(imagen_gris, 140, 255, cv2.THRESH_BINARY)[1]
-    cv2.imshow('imagen procesada', imagen_procesada)
-    cv2.waitKey(0)
+    # cv2.imshow('imagen procesada', imagen_procesada)
+    # cv2.waitKey(0)
 
     """With this section we use pytesseract to analyze the processed image and detect a number. We need to check 
     further in the 'config' section to get a better result accuracy depending on individual cases"""
@@ -134,7 +134,7 @@ resp = identify_number_red(resp_img, '--psm 10')
 pressure_systolic = identify_number_red(pressure_systolic_img, '--psm 10')
 pressure_diastolic = identify_number_red(pressure_diastolic_img, '--psm 10')
 
-print(f'The Heart Rate is {bpm}\nThe SPO2 is {spo2}\nThe respiration per minute is {resp}\nthe'
+print(f'The Heart Rate is {bpm}\nThe SPO2 is {spo2}\nThe respiration per minute is {resp}\nThe '
       f'pressure is {pressure_systolic}/{pressure_diastolic}')
 
 cv2.waitKey(0)
