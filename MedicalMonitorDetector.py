@@ -42,7 +42,7 @@ def identify_number_red(img, x):
     The function threshold returns a tuple, and the funtion 'cv2.imshow' only shows 'arrays', therefore this is 
     solved by adding the '[1]' at the end of the method 'threshold'. In case further doubts show up, print the variable 
     type"""
-    imagen_procesada = cv2.threshold(imagen_gris, 160, 255, cv2.THRESH_BINARY)[1]
+    imagen_procesada = cv2.threshold(imagen_gris, 140, 255, cv2.THRESH_BINARY)[1]
     cv2.imshow('imagen procesada', imagen_procesada)
     cv2.waitKey(0)
 
@@ -110,7 +110,32 @@ imagen = cv2.imread('Monitor.png')
 
 """This will show in  window the image that we choose"""
 cv2.imshow('imagen', imagen)
-rows, cols, _ = imagen.shape
-print(f'Los pixeles de filas son {rows} y de las columnas son {cols}')
 cv2.waitKey(0)
 
+# Code used to ROI an image (select a Region Of Interest, or chop it)
+"""As a reference 'imagen[height start: height end, width start, width end]"""
+bpm_img = imagen[50: 100, 30: 110]
+spo2_img = imagen[105: 150, 30: 110]
+resp_img = imagen[155: 200, 30: 110]
+pressure_systolic_img = imagen[205: 240, 20: 100]
+pressure_diastolic_img = imagen[205: 240, 120: 170]
+"""Important note; it is not possible to have the same window name on 2 windows"""
+# cv2.imshow("imgen cortada 1", bpm_img)
+# cv2.imshow("imgen cortada 2", spo2_img)
+# cv2.imshow("imgen cortada 3", resp_img)
+# cv2.imshow("imgen cortada 4", pressure1_img)
+# cv2.imshow("imgen cortada 5", pressure2_img)
+# cv2.waitKey(0)
+
+"""Call the functions to identify the numbers in the images and store them in variables"""
+bpm = identify_number_red(bpm_img, '--psm 10')
+spo2 = identify_number_red(spo2_img, '--psm 10')
+resp = identify_number_red(resp_img, '--psm 10')
+pressure_systolic = identify_number_red(pressure_systolic_img, '--psm 10')
+pressure_diastolic = identify_number_red(pressure_diastolic_img, '--psm 10')
+
+print(f'The Heart Rate is {bpm}\nThe SPO2 is {spo2}\nThe respiration per minute is {resp}\nthe'
+      f'pressure is {pressure_systolic}/{pressure_diastolic}')
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
