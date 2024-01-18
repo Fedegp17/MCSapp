@@ -51,7 +51,8 @@ def identify_number_red(img, x):
     option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
     option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
     texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
-    print(texto)
+    texto = int(texto)
+    return texto
 
 
 # This function should be used when trying to delete the blue area of an image
@@ -75,7 +76,8 @@ def identify_number_blue(img, x, y):
     option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
     option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
     texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
-    print(texto)
+    texto = int(texto)
+    return texto
 
 
 # This function should be used when trying to delete the yellow area of an image
@@ -99,7 +101,8 @@ def identify_number_yellow(img, x):
     option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
     option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
     texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
-    print(texto)
+    texto = int(texto)
+    return texto
 
 
 "First we load the desired image"
@@ -125,13 +128,15 @@ cv2.imshow('imagen cortada5', imagen_cortada5)
 cv2.waitKey(0)
 
 """The developed function allows us to transform the image into a number:"""
-identify_number_red(imagen_cortada1, '--psm 10')
-identify_number_blue(imagen_cortada2, '--psm 10', 100)
-identify_number_red(imagen_cortada3, '--psm 10')
-identify_number_yellow(imagen_cortada4, '--psm 10')
-identify_number_blue(imagen_cortada5, '--psm 10', 60)
+x1 = identify_number_red(imagen_cortada1, '--psm 10')
+x2 = identify_number_blue(imagen_cortada2, '--psm 10', 100)
+x3 = identify_number_red(imagen_cortada3, '--psm 10')
+x4 = identify_number_yellow(imagen_cortada4, '--psm 10')
+x5 = identify_number_blue(imagen_cortada5, '--psm 10', 60)
 """Final note: the number 7 needed the blue area so tesseract could identify a 7 and not a '/', that is why in the
 blue function it is a third parameter unlike the other functions"""
+
+print(f'Los números de la imagen son {x1}, {x2}, {x3}, {x4}, y {x5}')
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
