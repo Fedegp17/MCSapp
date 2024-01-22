@@ -120,7 +120,7 @@ resp_img = imagen[155: 200, 30: 110]
 pressure_systolic_img = imagen[205: 240, 20: 100]
 pressure_diastolic_img = imagen[205: 240, 120: 170]
 """Important note; it is not possible to have the same window name on 2 windows"""
-# cv2.imshow("imgen cortada 1", bpm_img)
+cv2.imshow("imgen cortada 1", bpm_img)
 # cv2.imshow("imgen cortada 2", spo2_img)
 # cv2.imshow("imgen cortada 3", resp_img)
 # cv2.imshow("imgen cortada 4", pressure1_img)
