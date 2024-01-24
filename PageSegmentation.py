@@ -1,7 +1,15 @@
 import cv2
 import pytesseract
 
-# Programa para reconocimiento de números - Versión segmentación
+"""Created by: Ing. Antonio Gómez Ruiz
+01/21/2024 """
+
+"""Overall Notes:
+   This code allows the user to segment the image by choosing a rectangle of pixels in the loaded image. Once the
+   rectangle has been determined, the program uses number recognition to try to find an integer in the choosen 
+   rectangle"""
+
+# Number recognition program - Page segmentation functionality
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Start variables for the height and the width
@@ -37,11 +45,12 @@ def identify_number_red(image, config):
     return texto
 
 
+# Code used to allow the user to segment the image to its needs
 print("Vamos a delimitar el cuadrante\n")
 flag_principal = True
 while flag_principal:
     # First we load an image from our computer
-    img = cv2.imread('Monitor.png')
+    img = cv2.imread('Imagenes/Monitor.png')
     cv2.imshow("Monitor original", img)
     cv2.waitKey(0)
 
@@ -147,7 +156,7 @@ while flag_principal:
 
     flag_principal = False
 
-img = cv2.imread('Monitor.png')
+img = cv2.imread('Imagenes/Monitor.png')
 bpm_img = img[x: z, w: y]
 cv2.imshow("BPM Image", bpm_img)
 cv2.waitKey(0)

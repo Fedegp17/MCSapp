@@ -1,13 +1,13 @@
 import cv2
 
-"""Python script for image segmentation or page segmentation for further OCR-Optic Character Recognition.
-   Made by: Ing. Antonio Gómez Ruiz"""
+"""Created by: Ing. Antonio Gómez Ruiz
+01/16/2024 """
 
-# Variables
-
+"""Python script for recognizing the return value when a key is pressed while using the method 'cv2.waitKey()' of the
+   cv2 library. With this code we can know the value and use more keys, for example to give instructions."""
 
 # First we load an image from our computer
-img = cv2.imread('Monitor.png')
+img = cv2.imread('Imagenes/Monitor.png')
 
 
 def segmentar():
@@ -30,14 +30,6 @@ def cuadros(num_cuadros):
     num_cuadrantes = (num_cuadros)
 
 
-def main():
-    print("Iniciaremos a segmentar la imagen: ")
-    # num_cuadrantes = segmentar()
-    print('-' * 8)
-    bpm_img = img[w: x, y: z]
-    print(bpm_img)
-
-
 flag = True
 while flag:
     cv2.imshow('img', img)
@@ -49,6 +41,3 @@ while flag:
         continue
     else:
         print(k)
-
-
-main()

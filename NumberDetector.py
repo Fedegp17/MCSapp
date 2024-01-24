@@ -106,7 +106,7 @@ def identify_number_yellow(img, x):
 
 
 "First we load the desired image"
-imagen = cv2.imread('numeros.png')
+imagen = cv2.imread('Imagenes/numeros.png')
 
 """This will show in  window the image that we choose"""
 cv2.imshow('imagen', imagen)
