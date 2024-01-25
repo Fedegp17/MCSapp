@@ -1,3 +1,5 @@
+import time
+
 import cv2
 import pytesseract
 import matplotlib
@@ -112,6 +114,7 @@ imagen = cv2.imread('Imagenes/Monitor.png')
 cv2.imshow('imagen', imagen)
 cv2.waitKey(0)
 
+start = time.time()
 # Code used to ROI an image (select a Region Of Interest, or chop it)
 """As a reference 'imagen[height start: height end, width start, width end]"""
 bpm_img = imagen[50: 100, 30: 110]
@@ -134,8 +137,10 @@ resp = identify_number_red(resp_img, '--psm 10')
 pressure_systolic = identify_number_red(pressure_systolic_img, '--psm 10')
 pressure_diastolic = identify_number_red(pressure_diastolic_img, '--psm 10')
 
+end = time.time()
 print(f'The Heart Rate is {bpm}\nThe SPO2 is {spo2}\nThe respiration per minute is {resp}\nThe '
       f'pressure is {pressure_systolic}/{pressure_diastolic}')
+print(f'\nThe run time for the program is of {end - start}')
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
