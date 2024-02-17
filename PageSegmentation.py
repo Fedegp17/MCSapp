@@ -43,8 +43,8 @@ def segmentar():
     w = 30
     x = 30
     "Width - std values y = 110, z = 100  (chosen by me)"
-    y = 200
-    z = 130
+    y = 150
+    z = 150
 
     """First the program reads the image and shows it to the user """
     img_segmentar = cv2.imread('Imagenes/Monitor.png')
@@ -161,6 +161,10 @@ def segmentar():
 
     """Once the segment is ready we will return it so the program can save it"""
     return img_trim
+
+
+def mover_cuadro():
+    pass
 
 
 def principal():

@@ -1,0 +1,5 @@
+
+tecla W = 119
+tecla S = 115
+tecla A = 97
+tecla D= 100
