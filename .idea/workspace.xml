@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ebfb43-2dde-4f46-a782-7883a182c420" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/NumberDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumberDetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageSegmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageSegmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waitkeys.py" beforeDir="false" afterPath="$PROJECT_DIR$/waitkeys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/templates/fv/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/templates/images/IOT Medical Cloud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/templates/style/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/fv/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +48,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.NumberDetectorWebcam">
     <configuration name="MedicalMonitorDetectorWebcam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoT Cloud" />

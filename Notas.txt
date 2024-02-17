@@ -1,3 +1,5 @@
+Values of the key, used for the number recognition scripts. 
+Ignore this for the Djando development
 
 tecla W = 119
 tecla S = 115

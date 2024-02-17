@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fv.apps.FvConfig',
+    'IoTCloud.apps.IotcloudConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'medicalIOT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:\\Users\\togor\\Documents\\Proyectos\\IoT Cloud\\iot_platform\\medicalIOT\\IoTCloud\\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
