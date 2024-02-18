@@ -16,6 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+"""The urlpatterns where we will have the url directory with all the possible paths that our application will have.
+   please note that here we have the path /admin which will direct us to the admin section of the backend. Only 
+   authorized users can access to the backend admin section. The other path is empty ''. This is because it is 
+   redirecting the code to the folder of the app 'IoTCloud' and then to the script 'urls.py', meaning that all the 
+   urls are held in that folder in that script. 
+   
+   Please refer to the app folder 'IoTCloud' to the script 'urls.py' to see the full list of available urls held in that
+   directory. Nothing else is need to be done herer currently"""
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("IoTCloud.urls")),

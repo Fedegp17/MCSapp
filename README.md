@@ -12,7 +12,8 @@ Project developed by:
 
 For the Django development project, please refer to the folder 
 'iot_platform'. In this folder we have the Django project 'medicalIOT'
-and the app 'IoTCloud'. 
+and the app 'IoTCloud' Please read its own 'README' document for more 
+regarding that project and its content. 
 
 For the oximeter with IoT connection, please refer to the folder
 'AWS_prueba_tony'. Please note that this folder is not for python 

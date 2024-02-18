@@ -3,7 +3,8 @@ read this file for a general context of this project.
 
 The script 'manage.py' is the main script. Whenever we
 want to run the project to test it we will need to type
-the following command: 'python manage.py runserver'
+the following command: 'python manage.py runserver'. You can 
+refer to that script for further next steps
 *please note that you need to have active your virtual
 environment first
 
@@ -19,3 +20,6 @@ we are creating.
 
 The main work is held in the 'IoTCloud' folder, there you can find
 the scripts needed for the front end and back end development.
+
+In case you need more information, you can check the scripts
+'__init__.py' where I´ve put more information and notes.

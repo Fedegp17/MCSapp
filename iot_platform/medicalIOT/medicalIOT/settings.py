@@ -52,6 +52,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'medicalIOT.urls'
 
+"""Please note: The 'DIRS' is the directory where we need to put the path to the folder templates. Depending on your
+   personal configuration, you need to go to the foler 'templates', copy the path and then come here and past it in the
+   empty list 'DIRS'. """
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -74,6 +77,7 @@ WSGI_APPLICATION = 'medicalIOT.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+"""Database for Django, the default settings is set to work with SQLite3. We can also use MySQL, PostgreSQL, etc."""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -104,6 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
+"Language in which we will see Django in the server, we can change it to 'es' to see it in spanish."
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
