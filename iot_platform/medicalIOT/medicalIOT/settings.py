@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'IoTCloud.apps.IotcloudConfig',
+    'IoTCloud',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'medicalIOT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\\Users\\togor\\Documents\\Proyectos\\IoT Cloud\\iot_platform\\medicalIOT\\IoTCloud\\templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'medicalIOT.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# The database can be checked using SQLite 3 and opening it
 """Database for Django, the default settings is set to work with SQLite3. We can also use MySQL, PostgreSQL, etc."""
 DATABASES = {
     'default': {

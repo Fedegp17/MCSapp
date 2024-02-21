@@ -1,34 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
+<!-- We extend general content and structure from the script base_script.html from the folder 'iot_temp'
+     its like importing a library-->
+{% extends 'iot_temp/base_script.html'%}
+
+
+<!-- Command needed to load all the info held in the 'static' folder. This is Needed in all the HTML files -->
+{% load static %}
+
+
+<!-- Header of the html document -->
 <head>
- <title>Medical Iot</title>
- <style>
-   body {
-     text-align: left;
-     background-color:#012e46;
-   }
-   head{
-       color: #7498b6;
-       text-align: center;
-   }
-   p{
-    color: #7498b6;
-    text-align: center;
-   }
- </style>
+     <!-- Here we pass the specific name to the script 'base_script.htnl' -->
+     {% block title %} Home {% endblock %}
 </head>
-<body>
-    <h1>Name - {{emp.name}}</h1>
-    <img src="Mete.jpg">
-    <br />
-<head>Bienvenidos a Medical Iot Vamos a recivir datos del Esp Fede chinga tu madre</head>
-</head>
+
+
+<!-- Body section of this HTML script -->
 <body>
 
- <p>Los aparatos médicos que están dotados de conectividad a la red forman parte de
-   un ecosistema que ya ha adoptado su propio nombre. Es el internet de las cosas médicas (IoMT, por
-   sus siglas en inglés), que recoge todos los dispositivos interconectados a través de redes wifi. Mediant
-   e sensores informáticos, estos captan información y datos para almacenarlos en plataformas que se encuentran en la nu
-   be. Vamos por unas putas. </p>
+    <!-- Contenido principal -->
+    {% block content %}
+    <div id="salute">
+        <h1>Saludo - Buenas tardes Doctor</h1>
+        <h2>Bienvenidos a Medical Cloud Services</h2>
+    </div>
+
+
+    <div id="container-img">
+        <img src="{% static 'IoTCloud/img/iot_logo.jpg' %}" alt="Iot Logo.png" width="200" height="200"/>
+    </div>
+
+
+    <div id="container-text">
+        <p>Los aparatos médicos que están dotados de conectividad a la red forman parte de
+         un ecosistema que ya ha adoptado su propio nombre. Es el internet de las cosas médicas (IoMT, por
+         sus siglas en inglés), que recoge todos los dispositivos interconectados a través de redes wifi. Mediante
+         sensores informáticos, estos captan información y datos para almacenarlos en plataformas que se encuentran
+         en la nu be. Vamos por unas putas. </p>
+    </div>
+    {% endblock %}
+
+
+    <!-- Pié de página -->
+    {% block footer %}
+    <footer>
+      <div id="container-footer">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">Copyright &copy; 2023 · Medical Cloud Services S.A de C.V </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+
 </body>
 </html>
+<!-- End of the HTML document -->

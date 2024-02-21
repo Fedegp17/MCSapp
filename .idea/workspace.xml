@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="76ebfb43-2dde-4f46-a782-7883a182c420" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\togor\Documents\Proyectos\IoT Cloud\iot_platform\medicalIOT\IoTCloud\static\IoTCloud\img" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.NumberDetectorWebcam">
     <configuration name="MedicalMonitorDetectorWebcam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoT Cloud" />
@@ -194,5 +197,16 @@
       <updated>1705453716008</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
