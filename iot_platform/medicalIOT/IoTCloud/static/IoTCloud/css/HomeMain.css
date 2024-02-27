@@ -1,0 +1,100 @@
+/* StyleSheet for the main page only
+   https://www.quackit.com/css/css_color_codes.cfm */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#bg {
+    background-repeat: no-repeat;
+    background-size: 1450px 770px;
+    background-position: top;
+    background-attachment: fixed;
+} */
+
+#bg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+/* Main organizer section (content - footer) */
+
+/* #page-container {
+    position: relative;
+    min-height: 100vh;
+} */
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #12171e;
+}
+/* End main organizer */
+
+
+#content-wrap {
+    /* Padding for font color: top, right, bottom, left */
+    padding: 50px 30px 170px 30px;
+    max-width: 700px;
+
+    /* Margin distances: top, right, bottom, left */
+    margin: 10px 375px 0px 375px ;
+    background-color: #C8D5DF;
+    border-radius: 30px 30px 30px 30px;
+
+    /* Border radius: offset x, offset y, blur-radius, spread-radius, color */
+    box-shadow: 10px 10px 4px 2px rgb(0 0 0 / 20%);
+}
+
+.logo-img {
+    width: 200px;
+
+    /* Margin distances: top, right, bottom, left */
+    margin: 5px 200px 10px 200px;
+    border-radius: 100%;
+    border: 5px solid #eee;
+}
+
+.bienvenida{
+   margin-bottom: 20px;
+}
+
+#titulo_bienvenida{
+    text-align: center;
+}
+
+.boton{
+    border: 1px solid #EB796F;
+    background-color: #FAFAFA;
+    color: #EB796F;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+

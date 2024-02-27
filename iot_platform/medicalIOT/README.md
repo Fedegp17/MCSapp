@@ -16,10 +16,10 @@ that you can use with python, the sintaxis is:
 
 The folder 'medicalIOT' is the main folder created initially
 by Django, and the folder 'IoTCloud' is the application that
-we are creating. 
+we are creating. (please refer first to medicalIOT, the main
+folder, and then to the app IoTCloud)
 
 The main work is held in the 'IoTCloud' folder, there you can find
 the scripts needed for the front end and back end development.
 
-In case you need more information, you can check the scripts
-'__init__.py' where I´ve put more information and notes.
+# In case you need more information, you can check the scripts '__init__.py' where I´ve put more information and notes.
