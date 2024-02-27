@@ -24,7 +24,12 @@ ESP8266 board with IoT connection.
 The individual scripts are separated tests to do the OCR (optical 
 character recognition).Currently, each individual script is used for a 
 particular functionality test. In a further version an only script will
-be made integrating all this individual functionalities. 
+be made integrating all this individual functionalities.
+
+In case a push will be done, and you have added images to the repository
+for testing purposes, please add all the images to the '.gitignore' 
+document. All the images will be in the team's Google Drive, no image
+should be loaded to the repository
 
 Final notes: When you clone this repository, you will need to create a 
 virtual environment with the needed libraries. 
