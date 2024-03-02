@@ -14,7 +14,10 @@
 
     <!-- CSS and additional documentation loaded to the script -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="{% static 'IoTCloud/css/Sidebar.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'IoTCloud/css/Sidebar.css' %}" >
+    {% block style %}
+     
+    {% endblock %}
 </head>
 
 <!-- Body section of this HTML script -->
