@@ -28,15 +28,22 @@ def configuracion(request):
     return render(request, "iot_temp/configuracion.html")
 
 
+def aviso_privacidad(request):
+    return render(request, "iot_temp/AvisoPrivacidad.html")
+
+
+def about_us(request):
+    return render(request, "iot_temp/IoTHistory.html")
+
+
 # Estructura de datos Json para construir gráfico
 def get_chart(request):
-
     
-    #colors = ['blue', 'black', 'yellow', 'orange', 'magenta', 'purple', 'red', 'purple']
-    #random_color=colors[randrange(0, len(colors-1))]
+    # colors = ['blue', 'black', 'yellow', 'orange', 'magenta', 'purple', 'red', 'purple']
+    # random_color=colors[randrange(0, len(colors-1))]
 
-    serie=[]
-    counter=0
+    serie = []
+    counter = 0
 
     while(counter<24):
         serie.append(randrange(60,100))

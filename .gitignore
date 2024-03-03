@@ -1,4 +1,3 @@
-/imagenes
 /iot_platform/medicalIOT/IoTCloud/static/IoTCloud/img/iot_logo.jpg
 /iot_platform/medicalIOT/IoTCloud/static/IoTCloud/img/Main_page_BG.jpg
 /Imagenes/Monitor.png
@@ -8,3 +7,5 @@
 /Imagenes/opencv_frame_0.png
 /Imagenes/opencv_frame_1.png
 /Imagenes/opencv_frame_3.png
+/usuarios.txt
+/myVenv

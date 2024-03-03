@@ -1,5 +1,9 @@
-/* StyleSheet for the main page only
+/* Stylesheet used only for the Home HTML script
    https://www.quackit.com/css/css_color_codes.cfm */
+
+/* If the server doesn't shows the updated CSS information, please do ctrl+F5. Sometimes the Cache thinks the script
+   is the same one, and doesn't loads the most recent CSS. With ctrl+F5 we order to reset the Cache and build the
+   server again */
 
 * {
     margin: 0;
@@ -39,6 +43,18 @@
     height: 2.5rem;
     background-color: #12171e;
 }
+
+.footer-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* End main organizer */
 
 
@@ -83,18 +99,4 @@
     cursor: pointer;
     text-decoration: none;
 }
-
-.footer-text {
-    text-align: center;
-    color: #fff;
-    padding-top: 10px;
-}
-
-
-
-
-
-
-
-
 

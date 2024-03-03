@@ -24,6 +24,7 @@ from django.urls import path, include
    
    Please refer to the app folder 'IoTCloud' to the script 'urls.py' to see the full list of available urls held in that
    directory. Nothing else is need to be done herer currently"""
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("IoTCloud.urls")),

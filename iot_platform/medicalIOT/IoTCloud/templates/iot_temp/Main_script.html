@@ -109,9 +109,22 @@
     <div class="main-content">
         <div class="container">
             {% block content %}
+                <!-- Here goes the main content from the rest of the HTML scripts -->
             {% endblock %}
         </div>
+
+        <!-- Pié de página -->
+        <footer id="footer">
+            <p class="footer-text">
+                Copyright &copy; 2024 ·
+                <a href="{% url 'Historia' %}"> Medical Cloud Services S.A. de C.V  </a>
+                 ·
+                <a href="{% url 'AvisoPrivacidad' %}"> Aviso de privacidad </a>
+            </p>
+        </footer>
     </div>
+
+
 
 </body>
 

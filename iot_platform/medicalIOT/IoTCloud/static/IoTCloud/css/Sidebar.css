@@ -1,4 +1,8 @@
-/* StyleSheet for the sidebar of all the pages */
+/* StyleSheet for the sidebar and main contecnt of all the pages (Main_script HTML) */
+
+/* If the server doesn't shows the updated CSS information, please do ctrl+F5. Sometimes the Cache thinks the script
+   is the same one, and doesn't loads the most recent CSS. With ctrl+F5 we order to reset the Cache and build the
+   server again */
 
 /* HMTL general settings */
 * {
@@ -166,7 +170,30 @@
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
-    padding: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.main-content .container {
+    margin-left: 30px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #557996;
+}
+
+.footer-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
 }
 
 

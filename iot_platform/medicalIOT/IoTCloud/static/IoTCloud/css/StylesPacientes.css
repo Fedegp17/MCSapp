@@ -1,0 +1,15 @@
+/* Stylesheet used only for the Pacientes HTML script */
+
+/* If the server doesn't shows the updated CSS information, please do ctrl+F5. Sometimes the Cache thinks the script
+   is the same one, and doesn't loads the most recent CSS. With ctrl+F5 we order to reset the Cache and build the
+   server again */
+
+.list_px{
+    /* This margin is considering the initial margin of 'main content' of 80 px, meaning that the margin is 80px
+       initially, plus this 50px, 130 px in total of left margin*/
+    margin-left: 50px;
+}
+
+.list_px li{
+    height: 50px;
+}

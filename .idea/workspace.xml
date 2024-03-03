@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ebfb43-2dde-4f46-a782-7883a182c420" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/base_script.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/HomeMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/HomeMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/MainContent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/StylesDashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/Main_script.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/Main_script.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/hospitales.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/hospitales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/pacientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/pacientes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myVenv/Lib/site-packages/pip/_vendor/rich/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/myVenv/Lib/site-packages/pip/_vendor/rich/logging.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
