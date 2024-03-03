@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ebfb43-2dde-4f46-a782-7883a182c420" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedicalMonitorDetector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedicalMonitorDetectorIMSS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedicalMonitorDetectorWebcam.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultipleSegmentation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberDetector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberDetectorWebcam.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageSegmentation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebcamTake.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/HomeMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/HomeMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/MainContent.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/StylesDashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/Main_script.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/Main_script.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/hospitales.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/hospitales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/pacientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/templates/iot_temp/pacientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myVenv/Lib/site-packages/pip/_vendor/rich/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/myVenv/Lib/site-packages/pip/_vendor/rich/logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waitkeys.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +46,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\togor\Documents\Proyectos\IoT Cloud\iot_platform\medicalIOT\IoTCloud\static\IoTCloud\img" />
