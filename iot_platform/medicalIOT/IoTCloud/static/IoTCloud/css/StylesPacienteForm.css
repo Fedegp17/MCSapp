@@ -1,0 +1,21 @@
+.botones_form {
+    margin-left: 150px;
+}
+
+.boton {
+    border: 3px solid #365b77;
+    background-color: #FAFAFA;
+    color: #02253d;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.formulario {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+

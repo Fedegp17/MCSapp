@@ -89,13 +89,14 @@
     text-align: center;
 }
 
-.boton{
-    border: 1px solid #EB796F;
+.boton {
+    border: 3px solid #365b77;
     background-color: #FAFAFA;
-    color: #EB796F;
-    padding: 5px;
+    color: #02253d;
+    padding: 8px;
     font-size: 14px;
-    border-radius: 5px;
+    font-weight: 700;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
 }
