@@ -29,4 +29,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("IoTCloud.urls")),
     path('api/', include("api_endpoint.urls")),
+    path('', include("dashboard.urls")),
 ]

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'IoTCloud.apps.IotcloudConfig',
     'api_endpoint',
     'rest_framework',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
