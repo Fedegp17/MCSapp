@@ -28,4 +28,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("IoTCloud.urls")),
+    path('api/', include("api_endpoint.urls")),
 ]

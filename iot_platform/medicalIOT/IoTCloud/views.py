@@ -1,11 +1,11 @@
-from django.http.response import JsonResponse
 from django.shortcuts import render
 from django.views.generic.edit import CreateView
 from django.views.generic.list import ListView
 from django.urls import reverse, reverse_lazy
-from django.db.models import Count
 from .models import Paciente
 from random import randrange
+import json
+from django.http.response import JsonResponse
 
 
 # Create your views here.
@@ -25,8 +25,11 @@ def hospitales(request):
     return render(request, "iot_temp/hospitales.html")
 
 
+# I will use this view to test data reception
 def configuracion(request):
-    return render(request, "iot_temp/configuracion.html")
+    if request.method == 'POST':
+        received_data = json.loads(request.body)
+        return JsonResponse(received_data)
 
 
 def aviso_privacidad(request):
@@ -41,6 +44,13 @@ class Pacientes(ListView):
 
     template_name = 'iot_temp/pacientes.html'
     model = Paciente
+
+    context_object_name = 'pacientes'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['conteo'] = context['pacientes'].count()
+        return context
 
 
 class PacientesForm(CreateView):

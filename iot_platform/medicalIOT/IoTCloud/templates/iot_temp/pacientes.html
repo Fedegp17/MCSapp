@@ -16,23 +16,24 @@
 <div class="Pacientes">
     <h2> Saludos {nombre del doctor | Fede rífate la base de datos} </h2>
     <br>
-    <h3> Actualmente usted cuenta con {{ paciente.count }} de pacientes </h3>
+    <h3> Actualmente usted cuenta con {{conteo}} de pacientes </h3>
     <br>
-    <div class="Inicio">
+
+    <div class="zona_lista">
         <a href="{% url 'PacienteNuevo' %}">
             <input class="boton_pacientes" type="submit" value="Agregar nuevo paciente">
         </a>
-    </div>
-    <br>
-    <br>
-    <div class="list_px">
-        {% for paciente in paciente_list %}
-        <ul>
-            <li>
-                <h3> {{paciente.nombre}} {{paciente.apellidopaterno}} {{paciente.apellidomaterno}}</h3>
-            </li>
-        </ul>
-        {% endfor %}
+        <br>
+        <br>
+        <div class="list_px">
+            {% for paciente in object_list %}
+            <ul>
+                <li>
+                    <h3> {{paciente.nombre}} {{paciente.apellidopaterno}} {{paciente.apellidomaterno}}</h3>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock%}

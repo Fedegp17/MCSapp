@@ -7,7 +7,7 @@
 .list_hosp{
     /* This margin is considering the initial margin of 'main content' of 80 px, meaning that the margin is 80px
        initially, plus this 50px, 130 px in total of left margin*/
-    margin-left: 20px;
+    margin-left: 140px;
 }
 
 .list_hosp li{

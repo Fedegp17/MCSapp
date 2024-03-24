@@ -25,3 +25,8 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+.zona_lista {
+    margin-left: 90px;
+    margin-top: 10px;
+}

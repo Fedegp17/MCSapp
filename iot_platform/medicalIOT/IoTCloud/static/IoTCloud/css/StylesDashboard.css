@@ -5,6 +5,8 @@
    server again */
 
 .chart {
-    width: 100%;
-    min-height: 400px;
+    width: 800px;
+    min-height: 300px;
+    margin-left: 60px;
+    padding: 0;
 }
