@@ -15,7 +15,7 @@ class BeatsPerMinute(models.Model):
         verbose_name_plural = "Pulsioximetro"
         ordering = ["-created"]  # puting a '-' indicates to go from newer to older
 
-    # With this function we request to show the title as the public name, instead of a generic project name
+    # With this function we personalize the object or register title in the admin tab
     def __str__(self):
         titulo = str(self.beats)
         fecha = str(self.created)
@@ -40,7 +40,7 @@ class MedicalMonitor(models.Model):
         verbose_name_plural = "Signos vitales"
         ordering = ["-created"]  # puting a '-' indicates to go from newer to older
 
-    # With this function we request to show the title as the public name, instead of a generic project name
+    # With this function we personalize the object or register title in the admin tab
     def __str__(self):
         nombre = self.nombre
         fecha = str(self.created)

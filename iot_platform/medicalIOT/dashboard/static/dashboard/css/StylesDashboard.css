@@ -10,3 +10,14 @@
     margin-left: 60px;
     padding: 0;
 }
+
+.list_signos{
+    /* This margin is considering the initial margin of 'main content' of 80 px, meaning that the margin is 80px
+       initially, plus this 50px, 130 px in total of left margin*/
+    margin-left: 50px;
+}
+
+.list_signos li{
+    height: 35px;
+}
+

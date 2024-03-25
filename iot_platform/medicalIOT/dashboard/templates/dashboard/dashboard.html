@@ -17,22 +17,53 @@
 {% block content %}
 
     <h3> Signos vitales: </h3>
+    <br>
 
         <!-- Dashboard -->
         <div class="container">
             <div class="row my-4">
                 <div class="mx-auto">
+
                     <div id="chart" class="chart">
                         <!-- Apache Echarts -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+                        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
 
-                        <!-- Custom JS -->
-                        <script src="{% static 'dashboard/js/main.js' %}"></script>
+                         Custom JS
+                        <script src="{% static 'dashboard/js/main.js' %}"></script> -->
+                        {% block gauge %}
+
+                        {% endblock %}
                     </div>
+
+
+                    <div id="Signos_vitales" class="Signos_vitales">
+                        <!-- first column where we will show the medical monitor -->
+                        <div id="col_monitor">
+                            <h3> Monitor médico </h3><br>
+                            <div class="list_signos">
+                                <ul>
+                                    <li>
+                                        <h4> Ritmo cardíaco: {{signos.heart_rate}} </h4>
+                                    </li>
+                                    <li>
+                                        <h4> Saturación de oxígeno: {{signos.spo2}} </h4>
+                                    </li>
+                                    <li>
+                                        <h4> Respiración por minuto: {{signos.respiracion}} </h4>
+                                    </li>
+                                    <li>
+                                        <h4> Presión (sistólica/diastólica): {{signos.presion_sistolica}}/{{signos.presion_diastolica}} </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
 
 
-{% endblock%}
+{% endblock %}
 

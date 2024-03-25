@@ -2,12 +2,16 @@ from django.shortcuts import render
 from random import randrange
 # from iot_platform.medicalIOT.api_endpoint.models import MedicalMonitor
 from django.http.response import JsonResponse
-import json
+from api_endpoint.models import MedicalMonitor
+from django.views.generic import DetailView
 
 
 # Create your views here.
 def dashboard(request):
-    return render(request, "dashboard/dashboard.html")
+    """We can retrieve the firs() and last() object of a mode, but since our model is already sorted by the latest
+       created (see our models.py) then in this case we need to retrieve the first() so we have the most recent object"""
+    signos = MedicalMonitor.objects.first()
+    return render(request, "dashboard/gauge_chart.html", {"signos": signos})
 
 
 # Estructura de datos Json para construir gráfico

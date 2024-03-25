@@ -37,7 +37,7 @@ class Hospital(models.Model):
         verbose_name_plural = "Hospitales"
         ordering = ["-created"]  # puting a '-' indicates to go from newer to older
 
-    # With this function we request to show the title as the public name, instead of a generic project name
+    # With this function we personalize the object or register title in the admin tab
     def __str__(self):
         return self.name
 
@@ -58,7 +58,7 @@ class Medico(models.Model):
         verbose_name_plural = "Doctores"
         ordering = ["-created"]  # puting a '-' indicates to go from newer to older
 
-    # With this function we request to show the title as the public name, instead of a generic project name
+    # With this function we personalize the object or register title in the admin tab
     def __str__(self):
         return self.nombre
 
@@ -78,7 +78,7 @@ class Paciente(models.Model):
         verbose_name_plural = "Pacientes"
         ordering = ["-ingreso"]  # puting a '-' indicates to go from newer to older
 
-    # With this function we request to show the title as the public name, instead of a generic project name
+    # With this function we personalize the object or register title in the admin tab
     def __str__(self):
         return self.nombre
 

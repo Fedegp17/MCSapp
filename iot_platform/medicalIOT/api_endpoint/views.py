@@ -17,18 +17,23 @@ def save_payload(request):
         payload = json.loads(request.body)
         # If the payload comes from the PulseOximeter, we save it in this Model
         if payload['dispositivo'] == "PulseOximeter":
+            # First we store the Json content in a variable
             latidos = float(payload['beats'])
+            # Now we pass the saved data to our model (DataBase)
             registro = BeatsPerMinute.objects.create(
                 beats=latidos,
             )
+
         # Elif if the payload comes from the Medical monitor detector, we save it in this Model
         elif payload['dispositivo'] == "MonitorMedico":
+            # First we store the Json content in variables
             nombre = str(payload['paciente'])
             heart_rate_json = float(payload['ritmo_cardiaco'])
             spo2_json = float(payload['spo2'])
             respiracion_json = float(payload['respiracion'])
             presion_sistolica_json = float(payload['presion_sistolica'])
             presion_diastolica_json = float(payload['presion_diastolica'])
+            # Now we pass the saved data to our model (DataBase)
             registro = MedicalMonitor.objects.create(
                 nombre=nombre,
                 heart_rate=heart_rate_json,
