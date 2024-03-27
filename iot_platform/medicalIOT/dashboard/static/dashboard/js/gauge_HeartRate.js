@@ -1,10 +1,11 @@
 
 // setup
+
     const data = {
       labels: ['Mon', 'Tue'],
       datasets: [{
         label: 'Weekly Sales',
-        data: [130, 20],
+        data: [120, 20],
         backgroundColor: [
           'rgba(0, 63, 147, 0.8)',
           'rgba(0, 0, 0, 0.2)'
@@ -82,7 +83,7 @@
 
     // render init block
     const myChart = new Chart(
-      document.getElementById('myChart'),
+      document.getElementById('HeartChart'),
       config
     );
 
