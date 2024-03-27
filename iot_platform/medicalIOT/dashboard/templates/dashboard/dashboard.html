@@ -30,9 +30,11 @@
 
                          Custom JS
                         <script src="{% static 'dashboard/js/main.js' %}"></script> -->
-                        {% block gauge %}
-
-                        {% endblock %}
+                        <div class="chartBox">
+                            <canvas id="myChart"></canvas>
+                                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+                                <script src="{% static 'dashboard/js/gauge_chart.js' %}"></script>
+                        </div>
                     </div>
 
 

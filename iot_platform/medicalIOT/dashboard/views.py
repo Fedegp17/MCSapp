@@ -11,7 +11,7 @@ def dashboard(request):
     """We can retrieve the firs() and last() object of a mode, but since our model is already sorted by the latest
        created (see our models.py) then in this case we need to retrieve the first() so we have the most recent object"""
     signos = MedicalMonitor.objects.first()
-    return render(request, "dashboard/gauge_chart.html", {"signos": signos})
+    return render(request, "dashboard/dashboard.html", {"signos": signos})
 
 
 # Estructura de datos Json para construir gráfico
