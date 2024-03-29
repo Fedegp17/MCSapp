@@ -4,11 +4,16 @@
    is the same one, and doesn't loads the most recent CSS. With ctrl+F5 we order to reset the Cache and build the
    server again */
 
-.chart {
-    width: 800px;
-    min-height: 300px;
-    margin-left: 60px;
-    padding: 0;
+
+/*First alignment, its the margin for the title 'IoT Medical Cloud*/
+.container {
+    margin-left: 30px;
+}
+
+.main-content .container h1{
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 350;
+    font-size: 60px;
 }
 
 .list_signos{
@@ -21,13 +26,46 @@
     height: 35px;
 }
 
+
+.chart {
+    width: 800px;
+    min-height: 300px;
+    margin-left: 60px;
+    padding: 0;
+}
+
 .chartBox {
-        width: 200px;
-        padding: 10px;
-        height: 200px;
-        border-radius: 20px;
-        border: solid 3px green;
-        /*border: solid 3px rgba(54, 162, 235, 1);*/
-        background: white;
-      }
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    border-radius: 20px;
+    border: solid 3px green;
+    /*border: solid 3px rgba(54, 162, 235, 1);*/
+    background: white;
+}
+
+.graficos {
+    margin-right: 10px;
+}
+
+.Signos_vitales {
+    min-height: 300px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.col_monitor{
+    width: 50%
+    /*display: inline-block*/
+}
+
+.col_pulseoximeter{
+    width: 50%
+    /*display: inline-block*/
+}
+
+
+
+
+
 

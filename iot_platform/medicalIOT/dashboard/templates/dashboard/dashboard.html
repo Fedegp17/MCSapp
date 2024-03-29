@@ -22,7 +22,7 @@
         <!-- Dashboard -->
         <div class="container">
             <div class="row my-4">
-                <div class="mx-auto">
+                <div class="graficos">
 
                     <div id="chart" class="chart">
                         <!-- Apache Echarts -->
@@ -135,33 +135,50 @@
                         </div>
 
                     </div>
+                </div>
 
 
-                    <div id="Signos_vitales" class="Signos_vitales">
-                        <!-- first column where we will show the medical monitor -->
-                        <div id="col_monitor">
-                            <h3> Monitor médico </h3><br>
-                            <div class="list_signos">
-                                <ul>
-                                    <li>
-                                        <h4> Ritmo cardíaco: {{signos.heart_rate}} </h4>
-                                    </li>
-                                    <li>
-                                        <h4> Saturación de oxígeno: {{signos.spo2}} </h4>
-                                    </li>
-                                    <li>
-                                        <h4> Respiración por minuto: {{signos.respiracion}} </h4>
-                                    </li>
-                                    <li>
-                                        <h4> Presión (sistólica/diastólica): {{signos.presion_sistolica}}/{{signos.presion_diastolica}} </h4>
-                                    </li>
-                                </ul>
-                            </div>
+                <div class="Signos_vitales">
+                    <!-- first column where we will show the medical monitor -->
+                    <div class="col_monitor">
+                        <h3> Monitor médico </h3>
+                        <br>
+                        <div class="list_signos">
+                            <ul>
+                                <li>
+                                    <h4> Ritmo cardíaco: {{signos.heart_rate}} </h4>
+                                </li>
+                                <li>
+                                    <h4> Saturación de oxígeno: {{signos.spo2}} </h4>
+                                </li>
+                                <li>
+                                    <h4> Respiración por minuto: {{signos.respiracion}} </h4>
+                                </li>
+                                <li>
+                                    <h4> Presión (sistólica/diastólica): {{signos.presion_sistolica}}/{{signos.presion_diastolica}} </h4>
+                                </li>
+                            </ul>
                         </div>
-
+                        <p>Registrado: {{signos.created}}</p>
                     </div>
 
+                    <div class="col_pulseoximeter">
+                        <h3> Pulsioxímetro </h3>
+                        <br>
+                        <div class="list_signos">
+                            <ul>
+                                <li>
+                                    <h4> Pulsos por minuto: {{beats.beats}}</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Registrado: {{beats.created}}</p>
+                    </div>
+
+
                 </div>
+
+
             </div>
         </div>
 

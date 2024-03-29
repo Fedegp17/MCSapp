@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="76ebfb43-2dde-4f46-a782-7883a182c420" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/IoTCloud/static/IoTCloud/css/Sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/css/StylesDashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/css/StylesDashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/js/gauge_chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/js/gauge_HeartRate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/templates/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/templates/dashboard/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/togor/Documents/Proyectos/IoT Cloud/iot_platform/medicalIOT/dashboard/static/dashboard/js",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/togor/Documents/Proyectos/IoT Cloud/iot_platform/medicalIOT/dashboard/static/dashboard/js&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\togor\Documents\Proyectos\IoT Cloud\iot_platform\medicalIOT\dashboard\static\dashboard\js" />

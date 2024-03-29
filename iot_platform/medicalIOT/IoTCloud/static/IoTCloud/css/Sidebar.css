@@ -173,9 +173,6 @@
     padding: 0.5rem 0 0.5rem 0;
 }
 
-.main-content .container {
-    margin-left: 30px;
-}
 
 #footer {
     position: absolute;
@@ -196,11 +193,6 @@
     text-decoration: none;
 }
 
-.main-content .container h1{
-    font-family: "Wallpoet", sans-serif;
-    font-weight: 350;
-    font-size: 60px;
-}
 
 
 
