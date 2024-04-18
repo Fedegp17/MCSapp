@@ -4,6 +4,17 @@
    is the same one, and doesn't loads the most recent CSS. With ctrl+F5 we order to reset the Cache and build the
    server again */
 
+/*First alignment, its the margin for the title 'IoT Medical Cloud*/
+.container {
+    margin-left: 30px;
+}
+
+.main-content .container h1{
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 350;
+    font-size: 60px;
+}
+
 .list_px{
     /* This margin is considering the initial margin of 'main content' of 80 px, meaning that the margin is 80px
        initially, plus this 50px, 130 px in total of left margin*/
@@ -30,3 +41,4 @@
     margin-left: 90px;
     margin-top: 10px;
 }
+

@@ -8,6 +8,27 @@
 /*First alignment, its the margin for the title 'IoT Medical Cloud*/
 .container {
     margin-left: 30px;
+    margin-right: 10px;
+    background: blue;
+}
+
+.graficos {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: flex;
+    background: red;
+}
+
+.col_chart1 {
+    width: 200px;
+    min-height: 300px;
+    background: green;
+}
+
+.col_chart2 {
+    width: 200px;
+    min-height: 300px;
+    background: yellow;
 }
 
 .main-content .container h1{
@@ -26,31 +47,8 @@
     height: 35px;
 }
 
-
-.chart {
-    width: 800px;
-    min-height: 300px;
-    margin-left: 60px;
-    padding: 0;
-}
-
-.chartBox {
-    width: 200px;
-    padding: 10px;
-    height: 200px;
-    border-radius: 20px;
-    border: solid 3px green;
-    /*border: solid 3px rgba(54, 162, 235, 1);*/
-    background: white;
-}
-
-.graficos {
-    margin-right: 10px;
-}
-
 .Signos_vitales {
     min-height: 300px;
-    margin-right: 10px;
     display: flex;
 }
 

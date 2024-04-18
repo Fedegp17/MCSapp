@@ -1,11 +1,9 @@
 
-// setup
-
     const data = {
       labels: ['Mon', 'Tue'],
       datasets: [{
         label: 'Weekly Sales',
-        data: [120, 20],
+        data: [heart_rate, 220 - heart_rate],
         backgroundColor: [
           'rgba(0, 63, 147, 0.8)',
           'rgba(0, 0, 0, 0.2)'

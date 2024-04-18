@@ -21,119 +21,35 @@
 
         <!-- Dashboard -->
         <div class="container">
-            <div class="row my-4">
                 <div class="graficos">
 
-                    <div id="chart" class="chart">
+                    <div id="col_chart1" class="col_chart1">
                         <!-- Apache Echarts -->
                         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
 
                          Custom JS
                         <script src="{% static 'dashboard/js/main.js' %}"></script> -->
                         <div class="chartBox" style="width: 200px;
-                                                     padding: 10px;
                                                      height: 200px;
+                                                     padding: 10px;
                                                      border-radius: 20px;
                                                      border: solid 3px green;
                                                      background: white;">
                             <canvas id="HeartChart"></canvas>
-                                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+                            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
                             <!--<script src="{% static 'dashboard/js/gauge_Oxygen.js' %}"></script>-->
                             <!-- JS for the gauge chart, it should be in the .js document, but I was not able to pass
                                  the variable {{signos.heart_rate}}, therefore I am puting the script in the HTML-->
-                                <script>
-                                    const data = {
-                                      labels: ['Mon', 'Tue'],
-                                      datasets: [{
-                                        label: 'Weekly Sales',
-                                        data: [{{signos.heart_rate}}, 220 - {{signos.heart_rate}}],
-                                        backgroundColor: [
-                                          'rgba(0, 63, 147, 0.8)',
-                                          'rgba(0, 0, 0, 0.2)'
-                                        ],
-                                        borderColor: [
-                                          'rgba(0, 63, 147, 0.8)',
-                                          'rgba(0, 0, 0, 0.2)'
-                                        ],
-                                        borderWidth: 1,
-                                        cutout: '80%',
-                                        circumference: 180,
-                                        rotation: 270,
-                                      }]
-                                    };
-
-                                    // gauge ChartText config
-                                    const gaugeChartText = {
-                                        id: 'gaugeChartText',
-                                        afterDatasetsDraw(chart, agrs, pluginOptions) {
-                                            const { ctx, data, chartArea: {top, bottom, left, right, width, height}, scales: {r} } = chart;
-
-                                            ctx.save();
-                                            const xCoor = chart.getDatasetMeta(0).data[0].x;
-                                            const yCoor = chart.getDatasetMeta(0).data[0].y;
-                                            const score = data.datasets[0].data[0];
-                                            let rating;
-
-                                            if(score ==0 ) { rating = 'Asistolia'; }
-                                            if(score >= 1 && score <= 29) { rating = 'Bradicardia'; }
-                                            if(score >= 30 && score <= 59) { rating = 'Bradicardia'; }
-                                            if(score >= 60 && score <= 100) { rating = 'Ritmo sinusal'; }
-                                            if(score >= 101 && score <= 149) { rating = 'Taquicardia'; }
-                                            if(score >= 150) { rating = 'Taquicardia-Peligro'; }
-
-
-                                            //Function created for writing the labels of the chart to save lines of code
-                                            function textLabel(text, x, y, fontSize, textBaseLine, textAlign){
-                                                ctx.font = `${fontSize}px sans-serif`;
-                                                ctx.fillStyle = '#666';
-                                                ctx.textBaseLine = textBaseLine;
-                                                ctx.textAlign = textAlign;
-                                                ctx.fillText(text, x, y);
-                                            }
-
-                                            //Adding the limit values of the chart (0 & 220 i.e.)
-                                            textLabel('0', left, yCoor + 20, 20, 'top', 'left');
-                                            textLabel('220', right, yCoor + 20, 20, 'top', 'right');
-
-                                            //Adding the value registered by the chart
-                                            textLabel(score, xCoor, yCoor, 25, 'bottom', 'center');
-
-                                            //Adding the rating or category depending on the registered value
-                                            textLabel(rating, xCoor, yCoor - 25, 15, 'bottom', 'center');
-
-                                        }
-                                    }
-
-                                    // config
-                                    const config = {
-                                      type: 'doughnut',
-                                      data,
-                                      options: {
-                                        aspectRatio: 1,
-                                        plugins: {
-                                            legend: {
-                                                display: false
-                                            },
-                                            tooltip: {
-                                                enabled: false
-                                            }
-                                        }
-                                      },
-                                      plugins: [gaugeChartText]
-                                    };
-
-                                    // render init block
-                                    const myChart = new Chart(
-                                      document.getElementById('HeartChart'),
-                                      config
-                                    );
-
-                                    // Instantly assign Chart.js version
-                                    const chartVersion = document.getElementById('chartVersion');
-                                    chartVersion.innerText = Chart.version;
-                                    </script>
+                            <script>
+                                var heart_rate = {{ signos.heart_rate }};
+                            </script>
+                            <script src="{% static 'dashboard/js/gauge_HeartRate.js' %}"></script>
                         </div>
 
+                    </div>
+
+                    <div id="col_chart2" class="col_chart2">
+                        <p>Hola</p>
                     </div>
                 </div>
 
@@ -180,7 +96,6 @@
 
 
             </div>
-        </div>
 
 
 {% endblock %}

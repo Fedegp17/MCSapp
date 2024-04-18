@@ -4,7 +4,8 @@ read this file for a general context of this project.
 The script 'manage.py' is the main script. Whenever we
 want to run the project to test it we will need to type
 the following command: 'python manage.py runserver'. You can 
-refer to that script for further next steps
+refer to that script for further next steps, also, in that
+file is the list of the libraries needed for the project
 *please note that you need to have active your virtual
 environment first
 

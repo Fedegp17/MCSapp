@@ -6,8 +6,10 @@ import sys
 """Main sript that needs to be executed with the command 'python manage.py runserver' once the virtual environment
    has been activated. Currently the main folder is 'medicalIOT' and the application folder (where the backend and 
    front end should be held is 'IoTCloud'.
-  -django
-  -autopep8 
+  - django
+  - autopep8 
+  - djangorestframework
+  - Pillow
    
    """
 
