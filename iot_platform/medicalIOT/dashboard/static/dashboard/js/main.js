@@ -1,4 +1,4 @@
-
+// Deprecated, script no longer used
 
 const getOptionChart=async()=>{
 
