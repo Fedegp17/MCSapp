@@ -1,10 +1,8 @@
 from rest_framework import viewsets
-from .serializer import BeatsSerializer
 from .models import BeatsPerMinute
-from django.shortcuts import render
 from rest_framework.response import Response
 from django.http.response import HttpResponse
-from .models import BeatsPerMinute,MedicalMonitor
+from .models import BeatsPerMinute, MedicalMonitor
 from django.views.decorators.csrf import csrf_exempt
 import json
 
@@ -12,15 +10,16 @@ import json
 # Create your views here.
 # The CSRF exempt is needed so our server can admit incoming Json payloads, however, we need security measures
 @csrf_exempt
-def save_payload(request):
+def save_payload(request):  # Function used to save incoming Json objects
     if request.method == 'POST':
         payload = json.loads(request.body)
+
         # If the payload comes from the PulseOximeter, we save it in this Model
         if payload['dispositivo'] == "PulseOximeter":
             # First we store the Json content in a variable
             latidos = float(payload['beats'])
             # Now we pass the saved data to our model (DataBase)
-            registro = BeatsPerMinute.objects.create(
+            BeatsPerMinute.objects.create(
                 beats=latidos,
             )
 
@@ -34,7 +33,7 @@ def save_payload(request):
             presion_sistolica_json = float(payload['presion_sistolica'])
             presion_diastolica_json = float(payload['presion_diastolica'])
             # Now we pass the saved data to our model (DataBase)
-            registro = MedicalMonitor.objects.create(
+            MedicalMonitor.objects.create(
                 nombre=nombre,
                 heart_rate=heart_rate_json,
                 spo2=spo2_json,

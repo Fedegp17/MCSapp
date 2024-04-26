@@ -15,20 +15,20 @@
     margin-left: 60px;
     margin-right: 50%;
     display: flex;
-    background: red;
+    /*background: red; */
 }
 
 .col_chart1 {
     width: 50%;
     min-height: 300px
     display: flex;
-    background: green;
+    /*background: green; */
 }
 
 .col_chart2 {
     width: 50%;
     min-height: 300px;
-    background: yellow;
+    /*background: yellow; */
 }
 
 .main-content .container h1{

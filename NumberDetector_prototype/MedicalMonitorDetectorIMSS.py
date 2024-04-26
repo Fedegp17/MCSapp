@@ -108,20 +108,29 @@ def identify_number_yellow(img, x):
 
 
 "First we load the desired image"
-imagen = cv2.imread('Imagenes/MonitorIMSS.png')
+monitor = cv2.imread('Imagenes/MonitorIMSS.png')
+
+# Drawing rectangles (Only for visualization purposes)
+# (starting coordinate, ending coordinate), we take the cornes coordinates
+cv2.rectangle(monitor, (1020, 180), (1170, 280), (255, 0, 0), 5)
+cv2.rectangle(monitor, (1020, 340), (1170, 440), (255, 0, 0), 5)
+cv2.rectangle(monitor, (1010, 490), (1120, 600), (255, 0, 0), 5)
+cv2.rectangle(monitor, (220, 620), (315, 710), (255, 0, 0), 3)
+cv2.rectangle(monitor, (330, 620), (430, 710), (255, 0, 0), 3)
 
 """This will show in  window the image that we choose"""
-cv2.imshow('imagen', imagen)
+cv2.imshow('imagen', monitor)
 cv2.waitKey(0)
 
 start = time.time()
 # Code used to ROI an image (select a Region Of Interest, or chop it)
-"""As a reference 'imagen[height start: height end, width start, width end]"""
-bpm_img = imagen[180: 280, 1020: 1170]
-spo2_img = imagen[340: 440, 1020: 1170]
-resp_img = imagen[490: 600, 1010: 1120]
-pressure_systolic_img = imagen[620: 710, 220: 315]
-pressure_diastolic_img = imagen[620: 710, 330: 430]
+"""As a reference 'imagen[height start: height end, width start, width end]'
+or explained also as 'imagen[y1: y2, x1: x2] """
+bpm_img = monitor[180: 280, 1020: 1170]
+spo2_img = monitor[340: 440, 1020: 1170]
+resp_img = monitor[490: 600, 1010: 1120]
+pressure_systolic_img = monitor[620: 710, 220: 315]
+pressure_diastolic_img = monitor[620: 710, 330: 430]
 """Important note; it is not possible to have the same window name on 2 windows"""
 # cv2.imshow("imgen cortada 1", bpm_img)
 # cv2.imshow("imgen cortada 2", spo2_img)

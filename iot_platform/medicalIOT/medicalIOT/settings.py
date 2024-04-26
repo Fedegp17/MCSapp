@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'IoTCloud.apps.IotcloudConfig',
-    'api_endpoint',
     'rest_framework',
+    'api_endpoint.apps.ApiEndpointConfig',
+    'corsheaders',
     'dashboard',
 ]
 

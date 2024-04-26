@@ -6,10 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="76ebfb43-2dde-4f46-a782-7883a182c420" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberDetector_prototype/MedicalMonitorDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumberDetector_prototype/MedicalMonitorDetector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberDetector_prototype/MedicalMonitorDetectorIMSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumberDetector_prototype/MedicalMonitorDetectorIMSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/api_endpoint/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/api_endpoint/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/api_endpoint/serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/api_endpoint/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/api_endpoint/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/css/StylesDashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/css/StylesDashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/js/gauge_HeartRate.js" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/js/gauge_HeartRate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/js/gauge_Oxygen.js" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/static/dashboard/js/gauge_Oxygen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/templates/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/templates/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot_platform/medicalIOT/medicalIOT/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +63,7 @@
       <recent name="C:\Users\togor\Documents\Proyectos\IoT Cloud\iot_platform\medicalIOT\IoTCloud\static\IoTCloud\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MultipleSegmentation (1)">
+  <component name="RunManager" selected="Python.MedicalMonitorDetectorIMSS (1)">
     <configuration name="MedicalMonitorDetector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoT Cloud" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,8 +192,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MultipleSegmentation (1)" />
         <item itemvalue="Python.MedicalMonitorDetectorIMSS (1)" />
+        <item itemvalue="Python.MultipleSegmentation (1)" />
         <item itemvalue="Python.NumberDetector (1)" />
         <item itemvalue="Python.MedicalMonitorDetector" />
         <item itemvalue="Python.MedicalMonitorDetectorIMSS" />

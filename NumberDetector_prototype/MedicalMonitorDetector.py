@@ -57,56 +57,6 @@ def identify_number_red(img, x):
     return texto
 
 
-# This function should be used when trying to delete the blue area of an image
-def identify_number_blue(img, x, y):
-    """This will allow us to transform the choosen image to one in a gray scale"""
-    imagen_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imshow('imagen gris', imagen_gris)
-    cv2.waitKey(0)
-
-    """Thresholding == 'umbral' o 'umbralización'
-    The function threshold returns a tuple, and the funtion 'cv2.imshow' only shows 'arrays', therefore this is 
-    solved by adding the '[1]' at the end of the method 'threshold'. In case further doubts show up, print the variable 
-    type"""
-    """This values will retrieve only the 'red' area and delete the blue one"""
-    imagen_procesada = cv2.threshold(imagen_gris, y, 255, cv2.THRESH_BINARY)[1]
-    cv2.imshow('imagen procesada', imagen_procesada)
-    cv2.waitKey(0)
-
-    """With this section we use pytesseract to analyze the processed image and detect a number. We need to check 
-    further in the 'config' section to get a better result accuracy depending on individual cases"""
-    option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
-    option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
-    texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
-    texto = int(texto)
-    return texto
-
-
-# This function should be used when trying to delete the yellow area of an image
-def identify_number_yellow(img, x):
-    """This will allow us to transform the choosen image to one in a gray scale"""
-    imagen_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imshow('imagen gris', imagen_gris)
-    cv2.waitKey(0)
-
-    """Thresholding == 'umbral' o 'umbralización'
-    The function threshold returns a tuple, and the funtion 'cv2.imshow' only shows 'arrays', therefore this is 
-    solved by adding the '[1]' at the end of the method 'threshold'. In case further doubts show up, print the variable 
-    type"""
-    """This values will retrieve only the 'red' area and delete the blue one"""
-    imagen_procesada = cv2.threshold(imagen_gris, 130, 255, cv2.THRESH_BINARY)[1]
-    cv2.imshow('imagen procesada', imagen_procesada)
-    cv2.waitKey(0)
-
-    """With this section we use pytesseract to analyze the processed image and detect a number. We need to check 
-    further in the 'config' section to get a better result accuracy depending on individual cases"""
-    option1 = '-c tessedit_char_whitelist=0123456789 --psm 11 --oem 0'
-    option2 = 'tesseract input_file output_file --oem 0 -c tessedit_char_whitelist=0123456789'
-    texto = pytesseract.image_to_string(imagen_procesada, lang='eng', config=x)
-    texto = int(texto)
-    return texto
-
-
 "First we load the desired image"
 imagen = cv2.imread('Imagenes/Monitor.png')
 

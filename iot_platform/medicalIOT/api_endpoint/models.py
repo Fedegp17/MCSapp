@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class BeatsPerMinute(models.Model):
+class BeatsPerMinute(models.Model):  # PulseOximeter Database
     beats = models.FloatField(verbose_name='Latidos por minuto')
     # With this, the register saves the date when its created. By default, Django hides this to avoid modifications
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
@@ -22,7 +22,7 @@ class BeatsPerMinute(models.Model):
         return f'{titulo} registrado en {fecha}'
 
 
-class MedicalMonitor(models.Model):
+class MedicalMonitor(models.Model):  # Medical Monitor Database
     nombre = models.CharField(max_length=40, verbose_name='Nombre')
     heart_rate = models.FloatField(verbose_name='Ritmo cardiaco')
     spo2 = models.FloatField(verbose_name='Saturación de oxígeno')
